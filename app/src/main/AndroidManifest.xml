@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
-        <activity android:name=".MainActivity">
+        <activity android:name=".SecondActivity"
+            android:label="Second Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.deusto.mcmu.gitexample.MainActivity"/>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:label="Main Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
